@@ -37,6 +37,10 @@ const HeroSection = () => {
             SYSTEM.INIT //
           </p>
 
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-foreground mb-2">
+            Matheus Diógenes
+          </h2>
+
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.05] terminal-glow text-primary mb-6">
             {displayed}
             <span className={`${done ? "cursor-blink" : ""} text-accent`}>_</span>
