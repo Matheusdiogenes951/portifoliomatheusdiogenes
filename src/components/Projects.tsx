@@ -36,10 +36,10 @@ const projects = [
     github: "https://github.com/Matheusdiogenes951/Curso-JavaScript",
   },
   {
-    title: "Landing Page",
-    desc: "Landing page simples com links pessoais.",
+    title: "HTML5 & CSS3",
+    desc: "Exercícios e projetos práticos de HTML5 e CSS3.",
     tags: ["html", "css"],
-    github: "https://github.com/Matheusdiogenes951/landingpage",
+    github: "https://github.com/Matheusdiogenes951/HTML_5-CSS_3",
   },
 ];
 
