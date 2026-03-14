@@ -23,10 +23,9 @@ const Header = () => {
     <header className="h-14 border-b border-border/50 backdrop-blur-md sticky top-0 z-50 bg-background/80">
       <div className="container h-full flex items-center justify-between">
         <a href="#" className="text-primary font-mono font-bold text-sm terminal-glow tracking-tight">
-          {">"}_&nbsp;gurgel.dev<span className="cursor-blink text-primary">_</span>
+          {">"}_&nbsp;matheus.dev<span className="cursor-blink text-primary">_</span>
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((l) => (
             <button
@@ -39,13 +38,11 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Mobile toggle */}
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <motion.div
           initial={{ opacity: 0, y: -8 }}
