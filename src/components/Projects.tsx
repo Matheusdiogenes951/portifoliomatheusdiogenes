@@ -10,11 +10,10 @@ const projects = [
     stars: 2,
   },
   {
-    title: "FightHub",
-    desc: "Site que mostra vídeos da época de ouro do MMA.",
-    tags: ["html", "css"],
-    github: "https://github.com/Matheusdiogenes951/FightHub",
-    stars: 2,
+    title: "POO",
+    desc: "Estudos e exercícios de Programação Orientada a Objetos.",
+    tags: ["python"],
+    github: "https://github.com/Matheusdiogenes951/POO",
   },
   {
     title: "Site Academia Karate",
