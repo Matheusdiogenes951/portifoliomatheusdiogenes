@@ -3,25 +3,44 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Data Analysis Bot",
-    desc: "Projeto de análise de dados automatizada com Python e bibliotecas de ML.",
-    tags: ["python", "pandas", "ai"],
-    github: "#",
-    demo: "#",
+    title: "Fila do Almoço",
+    desc: "Sistema desenvolvido para a EEEP Comendador Miguel Gurgel, para versionamento de faltas e gestão de filas.",
+    tags: ["html", "css", "javascript"],
+    github: "https://github.com/Matheusdiogenes951/Fila-do-Almoco",
+    stars: 2,
   },
   {
-    title: "Smart Home Automation",
-    desc: "Sistema de automação residencial com sensores IoT e controle via web.",
-    tags: ["python", "flask", "javascript"],
-    github: "#",
-    demo: "#",
+    title: "FightHub",
+    desc: "Site que mostra vídeos da época de ouro do MMA.",
+    tags: ["html", "css"],
+    github: "https://github.com/Matheusdiogenes951/FightHub",
+    stars: 2,
   },
   {
-    title: "AI Language Model",
-    desc: "Projeto experimental com modelos de linguagem e geração de texto.",
-    tags: ["python", "ai", "apis"],
-    github: "#",
-    demo: "#",
+    title: "Site Academia Karate",
+    desc: "Site desenvolvido para um dojo de Karate.",
+    tags: ["html", "css"],
+    github: "https://github.com/Matheusdiogenes951/Site-Academia-Karate",
+    stars: 1,
+  },
+  {
+    title: "Atividades Python",
+    desc: "Exercícios de Python dos cursos Mundo 1, 2 e 3 — estudos aprofundados da linguagem.",
+    tags: ["python"],
+    github: "https://github.com/Matheusdiogenes951/Atividades_Python",
+    stars: 2,
+  },
+  {
+    title: "Curso JavaScript",
+    desc: "Curso de JavaScript [40h] feito na plataforma Curso em Vídeo.",
+    tags: ["javascript", "html"],
+    github: "https://github.com/Matheusdiogenes951/Curso-JavaScript",
+  },
+  {
+    title: "Landing Page",
+    desc: "Landing page simples com links pessoais.",
+    tags: ["html", "css"],
+    github: "https://github.com/Matheusdiogenes951/landingpage",
   },
 ];
 
@@ -44,7 +63,6 @@ const Projects = () => {
               transition={{ delay: i * 0.1, duration: 0.3 }}
               className="project-card rounded-sm group"
             >
-              {/* Grid overlay area */}
               <div className="aspect-video bg-secondary/30 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{
@@ -53,13 +71,18 @@ const Projects = () => {
                     mixBlendMode: "overlay",
                   }}
                 />
-                <div className="absolute bottom-3 left-3 flex gap-1.5">
+                <div className="absolute bottom-3 left-3 flex gap-1.5 flex-wrap">
                   {p.tags.map((t) => (
                     <span key={t} className="text-[10px] text-muted-foreground font-mono">
                       [ {t} ]
                     </span>
                   ))}
                 </div>
+                {p.stars && (
+                  <span className="absolute top-3 right-3 text-[10px] text-accent font-mono">
+                    ★ {p.stars}
+                  </span>
+                )}
               </div>
 
               <div className="p-5">
@@ -67,11 +90,8 @@ const Projects = () => {
                 <p className="text-xs text-muted-foreground leading-relaxed mb-4">{p.desc}</p>
 
                 <div className="flex gap-3">
-                  <a href={p.github} className="btn-outline-terminal text-xs py-1.5 px-3">
+                  <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn-outline-terminal text-xs py-1.5 px-3">
                     <Github size={12} /> Código
-                  </a>
-                  <a href={p.demo} className="btn-outline-terminal text-xs py-1.5 px-3">
-                    <ExternalLink size={12} /> Demo
                   </a>
                 </div>
               </div>

@@ -42,8 +42,8 @@ const HeroSection = () => {
             <span className={`${done ? "cursor-blink" : ""} text-accent`}>_</span>
           </h1>
 
-          <p className="text-sm md:text-base text-muted-foreground max-w-xl leading-relaxed mb-8">
-            Estudante de Desenvolvimento de Sistemas explorando Inteligência Artificial, Web Development e automação.
+          <p className="text-sm md:text-base text-muted-foreground max-w-xl leading-relaxed mb-4">
+            Matheus Diógenes — Estudante de Desenvolvimento de Sistemas explorando Inteligência Artificial, Web Development e automação.
           </p>
 
           <p className="text-xs text-muted-foreground/60 mb-8 tracking-wide">

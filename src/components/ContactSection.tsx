@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:contato@gurgel.dev" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Matheusdiogenes951" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/matheus-di%C3%B3genes-493478396/" },
+  { icon: Mail, label: "Email", href: "mailto:matheusdiorgines26@gmail.com" },
 ];
 
 const ContactSection = () => {
@@ -22,6 +21,8 @@ const ContactSection = () => {
             <motion.a
               key={s.label}
               href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
               whileTap={{ scale: 0.98 }}
               className="w-10 h-10 border border-border rounded-sm flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-200"
               aria-label={s.label}
@@ -31,18 +32,18 @@ const ContactSection = () => {
           ))}
         </div>
 
-        <motion.button
+        <motion.a
+          href="mailto:matheusdiorgines26@gmail.com"
           whileTap={{ scale: 0.98 }}
-          className="btn-cta"
+          className="btn-cta inline-flex"
         >
-          {">"} EXECUTE_CONTACT_SEQUENCE
-        </motion.button>
+          {">"} VAMOS CONVERSAR?
+        </motion.a>
       </div>
 
-      {/* Footer */}
       <div className="container mt-20 pt-6 border-t border-border/50">
         <p className="text-xs text-muted-foreground/40 text-center">
-          © 2026 gurgel.dev — Construído com código e café.
+          © 2026 Matheus Diógenes — Construído com código e café.
         </p>
       </div>
     </section>

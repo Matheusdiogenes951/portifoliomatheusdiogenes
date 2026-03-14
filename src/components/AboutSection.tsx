@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-const aboutText = `Olá, sou um estudante apaixonado por tecnologia.
+const aboutText = `Olá, sou Matheus Diógenes — estudante apaixonado por tecnologia.
 Gosto de construir projetos, explorar inteligência artificial e aprender novas ferramentas todos os dias.
 Atualmente curso Desenvolvimento de Sistemas na EEEP Comendador Miguel Gurgel, onde combino lógica de programação com criatividade para resolver problemas reais.`;
 
